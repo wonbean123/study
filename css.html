@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--css선언-->
+    <style>
+        /*style 태그 내 작성하는 코드는 css코드*/
+        /*css코드에서의 주석*/
+
+        /*클레스명 h1을 적용한 태그에 선언해 놓은 스타일들이 적용*/
+        .h1{
+            display: block;
+            font-size; :34px;
+            font-weight: bold
+        }
+
+        .bg-yellow{
+            background-color: yellow;
+        }
+        
+        .naver{
+            text-decoration: none;
+            color: #03C75A;
+        }
+
+        /*dkvdp .을 붙이면 특정 태그의 클레스를 통해 해당 스타일을 적용할 수 있고
+        태그이름을 작성하면 해당 모든 태그에 스타일을 적용할수있다.*/
+        div{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+
+        }
+        /*이미 정의되어 있는 색상이름 사용*/
+        .name-color{
+            background-color: aquamarine;
+        }
+        /*rgb이용 각색깔의 수치는 0~255범위*/
+        .rgb-color{
+            background-color: rgb(100, 100, 100);
+        }
+
+        /*해쉬코드이용 네이버색상 해쉬코드=#03C75A 16진법 */
+        .hash-color{
+            background-color: rgb(3, 199,90);
+        }
+
+        /*색깔과 함께 투명도sms 0~1범위*/
+        .rgba-color{
+            background-color: rgb(255,0,0,0.5);
+        }
+        
+        .rgba-hash{  /*투명도는 0~ff범위*/
+            background-color: #ff000088 ;
+        }
+
+        /*opacity 스타일로 투명도 조절 0~1범위*/
+        .rgb-opacty{
+            background-color: #ff0000;
+            opacity: 0.4;
+        }
+
+        .
+
+
+    </style>
+</body>
+<span class="h1">h1과 같음</span>
+<!--띄어쓰기를 이용하여 여러개의 css를 적용할수있다.-->
+<div class="h1 bg-yellow">나도 h1 스타일 적용할래 </div>
+
+<!--css를 적용하여 밑줄없애고 색깔은 네이버 색깔로 나타내기-->
+<a class="naver" href="https://www.naver.com/" target="_blank">네이버</a>
+
+<!--색상 적용-->
+<div class="name-color"></div>
+<div class="rgb-color"></div>
+<div class="hash-color"></div>
+<div class="rgba-color"></div>
+<div class="rgba-hash"></div>
+<div class="rgb-opacty"></div>
+</html>
