@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+
+        }
+        /*margin은 상하좌우 4방향 모두 일괄적용*/
+        .child{
+            border: 2px solid red;
+            width: 100px;
+            height: 100px;
+            
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .box > p{
+            background-color: burlywood;
+            padding-left: 20px;
+           
+        
+        }
+        .box>img{
+            /*이미지 영역에 마우스 커서 올리면 포인터로 모양이 바뀜 마진은 해당이미지만 페딩은 보이지않는 영역도 포함*/
+            cursor: pointer;
+            padding: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="child"></div>
+    </div>
+    <div class="box">
+        <p>padding 확인</p>
+
+    </div>
+<div class="box">
+    <img src="https://static-00.iconduck.com/assets.00/close-icon-2048x2047-22z7exfk.png" width="10">
+</div>
+
+</body>
+</html>
