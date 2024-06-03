@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            width: 200px;
+            height: 300px;
+            display: inline-flex;
+            flex-direction: column;
+            margin-right: 10px;
+            border-radius: 20px;
+
+            /*테두리에 그림자 주기*/
+            /*첫번째 px은 그림자의 가로방향 위치*/
+            /*두번째 px은 그림자의 세로방향 위치*/
+            /*세번째 px은 그림자의 뿌연정도*/
+            /*네번째 px은 그림자의 영역*/
+            box-shadow: 10px 10px 10px 10px #dddddd;
+
+            /*자식요소가 부모 영역을 벗어날때 처리*/
+            overflow: hidden;
+
+        }
+
+        /*card클레스 내에 첫번째 div 선택*/
+        .card>div:nth-child(1) {
+            height: 70%;
+            position: relative;
+
+            /*내부 이미지 가운데 정렬*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+
+        }
+
+        .card>div {
+            border: 0px solid red;
+        }
+
+        /*card클레스 내에 첫번째 div 선택*/
+        .card>div:nth-child(2) {
+            height: 30%;
+
+        }
+
+        .like {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+
+
+        }
+
+        .photo {
+            transition-duration: 0.5s;
+        }
+
+        .photo:hover {
+            width: 140%;
+
+        }
+
+        .card-container {
+            border: 2px solid green;
+            
+            width: 800px;
+
+            white-space: ;
+            /*가로방향으로 삐져나오는 자식 요소에 대한 처리*/
+            overflow-x: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+
+    </div>
+    <!--카드만들기-->
+    <div class="card">
+        <div>
+            <img class="photo" width="100%"
+                src="https://image.msscdn.net/images/goods_img/20200717/1519796/1519796_1_500.jpg" alt="">
+            <img class="like" width="40px" src="resources/images/heart.png" alt="">
+        </div>
+        <div>
+            <p>재킷</p>
+            <p><span style="color: red;">34%</span>20,000 <span style="text-decoration: line-through;">30,000</span></p>
+        </div>
+    </div>
+    <!--카드만들기-->
+    <div class="card">
+        <div>
+            <img class="photo" width="100%"
+                src="https://image.msscdn.net/images/goods_img/20200717/1519796/1519796_1_500.jpg" alt="">
+            <img class="like" width="40px" src="resources/images/heart.png" alt="">
+        </div>
+        <div>
+            <p>재킷</p>
+            <p><span style="color: red;">34%</span>20,000 <span style="text-decoration: line-through;">30,000</span></p>
+        </div>
+    </div>
+    <!--카드만들기-->
+    <div class="card">
+        <div>
+            <img class="photo" width="100%"
+                src="https://image.msscdn.net/images/goods_img/20200717/1519796/1519796_1_500.jpg" alt="">
+            <img class="like" width="40px" src="resources/images/heart.png" alt="">
+        </div>
+        <div>
+            <p>재킷</p>
+            <p><span style="color: red;">34%</span>20,000 <span style="text-decoration: line-through;">30,000</span></p>
+        </div>
+    </div>
+    <!--카드만들기-->
+    <div class="card">
+        <div>
+            <img class="photo" width="100%"
+                src="https://image.msscdn.net/images/goods_img/20200717/1519796/1519796_1_500.jpg" alt="">
+            <img class="like" width="40px" src="resources/images/heart.png" alt="">
+        </div>
+        <div>
+            <p>재킷</p>
+            <p><span style="color: red;">34%</span>20,000 <span style="text-decoration: line-through;">30,000</span></p>
+        </div>
+    </div>
+    <!--카드만들기-->
+    <div class="card">
+        <div>
+            <img class="photo" width="100%"
+                src="https://image.msscdn.net/images/goods_img/20200717/1519796/1519796_1_500.jpg" alt="">
+            <img class="like" width="40px" src="resources/images/heart.png" alt="">
+        </div>
+        <div>
+            <p>재킷</p>
+            <p><span style="color: red;">34%</span>20,000 <span style="text-decoration: line-through;">30,000</span></p>
+        </div>
+    </div>
+    <!--카드만들기-->
+    <div class="card">
+        <div>
+            <img class="photo" width="100%"
+                src="https://image.msscdn.net/images/goods_img/20200717/1519796/1519796_1_500.jpg" alt="">
+            <img class="like" width="40px" src="resources/images/heart.png" alt="">
+        </div>
+        <div>
+            <p>재킷</p>
+            <p><span style="color: red;">34%</span>20,000 <span style="text-decoration: line-through;">30,000</span></p>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

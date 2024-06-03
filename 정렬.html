@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        div {
+            border: 1px solid black;
+        }
+    
+        .container {
+            height: 100px;
+            /*container 내부 태그들을 정렬하고자 하면 diplay flex 부여 */
+            /*내부 태그들의 디스플레이가 inline이나 block이던지 inline으로 만든다*/
+            display: flex;
+    
+            /*수평방향 정렬*/
+            /*start,center,end,space-* */
+            justify-content: space-between;
+    
+            /*수직방향 정령*/
+            align-items: center
+        }
+    
+        .login-box{
+            height: 200px;
+            width: 200px;
+
+            /*flex는 기본적으로 내부 요소를 한줄로 표현함(가로 방향)*/
+            display: flex;
+
+             /*내부요소를 세로 방향 한줄로 표현하도록 방향을 바꿈*/
+            flex-direction: column;
+
+            /*direction이 column인 경우 수직 정렬은 justfy-content 이용*/
+            justify-content: space-between;
+
+            padding-left: 20px;
+            padding-right: 20px;
+
+            /**/
+        }
+
+        
+        .navigation{
+            display: flex;
+            justify-content: space-between;
+            background-color: navy;
+            
+        }
+      
+       .logo{
+        display: flex;
+        align-items: center;
+       }
+
+       .menu{
+        display: flex;
+        align-items: center;
+       }
+       .menu > a{
+        padding: 10px;
+       }
+
+       .back{
+        display: flex;
+        align-items: center;
+       }
+
+       button{
+        /*테두리의 모서리를 둥글게 함*/
+        border-radius: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        border: 1px solid white;
+        color: white;
+
+        /*배경색을 투명하게 만듬*/
+        background-color: transparent;
+
+       }
+       
+       button:hover{
+        background-color: orange;
+        /*스타일의 변화가 있는경우 변화시간을 부여하면 애니메이션처럼 동작*/
+        transition-duration: 0.5s; /*1초동안 색상 변화*/
+        cursor: pointer;
+       }
+
+
+
+    </style>
+</head>
+
+
+<body>
+    <div>
+        <div class="container"></div>
+        <a href="">네이버</a>
+        <a href="">구글</a>
+        <a href="">로그인</a>
+    <div>
+
+    <div>
+            <div class="container"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+    </div>
+
+    <div class="login-box">
+        <input type="text">
+        <input type="password">
+        <button>로그인</button>
+    </div>
+
+    <!--배경 제거 사이트 remove.bg-->
+    <div class="navigation">
+        <div class="logo">
+            <img width="100" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5097%2F2019%2F07%2F25%2F368292_267336_3425_20190725113616536.jpg&type=l340_165" alt="">
+        </div>
+
+        <div class="menu">
+            <a href="">교육과정</a>
+            <a href="">학원소개</a>
+            <a href="">커뮤니티</a>
+            <a href="">프로젝트</a>
+        </div>
+
+        <div class="back">
+            <button>로그인</button>
+            <img width="40" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160504_295%2Fzzlidde_1462360339348GT0M2_PNG%2F2016-05-04_20.11.40.png&type=a340" alt="">
+            
+        </div>
+        
+    </div>
+
+</body>
+
+
+</html>
